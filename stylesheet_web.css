@@ -146,3 +146,7 @@ span.highlight {
   -ms-user-select: none; /* IE 10 and IE 11 */
   user-select: none; /* Standard syntax */
 }
+
+li:not(:last-child) {
+  margin-bottom: 5px;
+}
