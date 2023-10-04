@@ -76,9 +76,39 @@
                                             target="_blank" href="https://twitter.com/bsbijoy2050/">Twitter</a>
                                     </p>
                                 </td>
-                                <td style="padding:2.5%;width:40%;max-width:40%"> <a target="_blank"
-                                        href="bijoy_full.jpeg"><img style="width:100%;max-width:100%;"
-                                            alt="profile photo" src="bijoy_centre.png" class="hoverZoomLink "></a> </td>
+                                <td style="padding:2.5%;width:40%;max-width:40%"> 
+                                    <!-- <a target="_blank" href="bijoy_full.jpeg"> -->
+                                        <!-- <div class="image-fader"> -->
+                                            <style>
+                                                .slides { width: 100%; }
+                                                .slides-hidden { display : none; }
+                                            </style>
+                                            
+                                            <script>
+                                                addEventListener("load",() => { // "load" is safe but "DOMContentLoaded" starts earlier
+                                                    var index = 0;
+                                                    const slides = document.querySelectorAll(".slides");
+                                                    const classHide = "slides-hidden", count = slides.length;
+                                                    nextSlide();
+                                                    function nextSlide() {
+                                                        slides[(index ++) % count].classList.add(classHide);
+                                                        slides[index % count].classList.remove(classHide);
+                                                        setTimeout(nextSlide, 3000);
+                                                    }
+                                                });
+                                            </script>
+                                            
+                                            <!-- <section>
+                                                <img class="slides slides-hidden" src="external/ph1.jpg">
+                                                <img class="slides slides-hidden" src="external/ph2.jpg">
+                                                <img class="slides slides-hidden" src="external/ph3.jpg">
+                                            </section> -->
+                                            <img class="slides slides-hidden" style="width:100%;max-width:100%;" alt="profile photo" src="bijoy_centre.png">
+                                            <img class="slides slides-hidden" style="width:100%;max-width:100%;" alt="profile photo" src="bijoy_c2.png">
+
+                                        <!-- </div> -->
+                                    <!-- </a>  -->
+                                </td>
                             </tr>
                         </tbody>
                     </table>
